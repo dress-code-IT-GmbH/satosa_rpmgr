@@ -1,5 +1,7 @@
 Manage Allowed Relying Parties for SATOSA
 =========================================
 
-Web App to maintain a list of RPs in different deployment zones.
+Web App to maintain RPs in different deployment zones.
+
+The resulting config can be used by SATOSA to whitelist SP metadata
 

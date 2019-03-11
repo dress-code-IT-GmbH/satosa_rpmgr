@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'satosa_rpfilter.urls'
+ROOT_URLCONF = 'satosa_rpmgr.urls'
 
 TEMPLATES = [
     {
@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'satosa_rpfilter.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': os.path.join(BASE_DIR, 'database', 'db.sqlite3'),
     }
 }
 
