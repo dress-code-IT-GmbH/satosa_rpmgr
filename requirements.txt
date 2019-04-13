@@ -2,3 +2,6 @@
 # django 2.2. requires sqlite>= 3.8.3 -> no easy&clean way to do on centos7
 django<2.2
 gunicorn
+pytest
+pytest-django
+pyyaml
