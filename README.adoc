@@ -5,3 +5,5 @@ Web App to maintain RPs in different deployment zones.
 
 The resulting config can be used by SATOSA to whitelist SP metadata
 
+To export allowed relying parties (-> DecideBackendByRequester) use the script export_allowed_rp.py.
+To export allowed attributes (-> AttributeAuthorization) use the script export_allowed_attr.py.

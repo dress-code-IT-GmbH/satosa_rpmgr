@@ -1,0 +1,461 @@
+[
+  {
+    "model": "satosa_rpmgr.attribute",
+    "pk": 1,
+    "fields": {
+      "uri_name": "2.5.4.3",
+      "friendly_name": "commonName"
+    }
+  },
+  {
+    "model": "satosa_rpmgr.attribute",
+    "pk": 2,
+    "fields": {
+      "uri_name": "2.16.840.1.113730.3.1.241",
+      "friendly_name": "displayName"
+    }
+  },
+  {
+    "model": "satosa_rpmgr.attribute",
+    "pk": 3,
+    "fields": {
+      "uri_name": "2.5.4.4",
+      "friendly_name": "surname"
+    }
+  },
+  {
+    "model": "satosa_rpmgr.attribute",
+    "pk": 4,
+    "fields": {
+      "uri_name": "2.5.4.42",
+      "friendly_name": "givenName"
+    }
+  },
+  {
+    "model": "satosa_rpmgr.attribute",
+    "pk": 5,
+    "fields": {
+      "uri_name": "0.9.2342.19200300.100.1.1",
+      "friendly_name": "uid"
+    }
+  },
+  {
+    "model": "satosa_rpmgr.attribute",
+    "pk": 6,
+    "fields": {
+      "uri_name": "1.2.40.0.10.2.1.1.1",
+      "friendly_name": "gid"
+    }
+  },
+  {
+    "model": "satosa_rpmgr.attribute",
+    "pk": 7,
+    "fields": {
+      "uri_name": "1.2.40.0.10.2.1.1.149",
+      "friendly_name": "wbpkHash"
+    }
+  },
+  {
+    "model": "satosa_rpmgr.attribute",
+    "pk": 8,
+    "fields": {
+      "uri_name": "1.3.6.1.4.1.1466.115.121.1.27",
+      "friendly_name": "gender"
+    }
+  },
+  {
+    "model": "satosa_rpmgr.attribute",
+    "pk": 9,
+    "fields": {
+      "uri_name": "2.5.4.12",
+      "friendly_name": "personalTitle"
+    }
+  },
+  {
+    "model": "satosa_rpmgr.attribute",
+    "pk": 10,
+    "fields": {
+      "uri_name": "0.9.2342.19200300.100.1.3",
+      "friendly_name": "mail"
+    }
+  },
+  {
+    "model": "satosa_rpmgr.attribute",
+    "pk": 11,
+    "fields": {
+      "uri_name": "2.5.4.16",
+      "friendly_name": "postalAddress"
+    }
+  },
+  {
+    "model": "satosa_rpmgr.attribute",
+    "pk": 12,
+    "fields": {
+      "uri_name": "2.5.4.6",
+      "friendly_name": "country"
+    }
+  },
+  {
+    "model": "satosa_rpmgr.attribute",
+    "pk": 13,
+    "fields": {
+      "uri_name": "1.2.40.0.10.2.1.1.261.100",
+      "friendly_name": "orgSourcePin"
+    }
+  },
+  {
+    "model": "satosa_rpmgr.attribute",
+    "pk": 14,
+    "fields": {
+      "uri_name": "1.3.88",
+      "friendly_name": "gln"
+    }
+  },
+  {
+    "model": "satosa_rpmgr.attribute",
+    "pk": 15,
+    "fields": {
+      "uri_name": "2.5.4.10",
+      "friendly_name": "organizationName"
+    }
+  },
+  {
+    "model": "satosa_rpmgr.attribute",
+    "pk": 17,
+    "fields": {
+      "uri_name": "http://wirtschaftsportalverbund.at/ns/identity/claims/2016/04/registrationClassOrg",
+      "friendly_name": "registrationClassOrg"
+    }
+  },
+  {
+    "model": "satosa_rpmgr.attribute",
+    "pk": 18,
+    "fields": {
+      "uri_name": "http://wirtschaftsportalverbund.at/ns/identity/claims/2016/04/registrationClassUser",
+      "friendly_name": "registrationClassUser"
+    }
+  },
+  {
+    "model": "satosa_rpmgr.attribute",
+    "pk": 19,
+    "fields": {
+      "uri_name": "http://wirtschaftsportalverbund.at/ns/identity/claims/2016/04/authenticationClass",
+      "friendly_name": "authenticationClass"
+    }
+  },
+  {
+    "model": "satosa_rpmgr.attribute",
+    "pk": 20,
+    "fields": {
+      "uri_name": "http://schemas.wko.at/ws/2014/06/identity/claims/possiblerole",
+      "friendly_name": "PossibleRoles"
+    }
+  },
+  {
+    "model": "satosa_rpmgr.attribute",
+    "pk": 21,
+    "fields": {
+      "uri_name": "1.2.40.0.10.2.1.1.261.30",
+      "friendly_name": "rights"
+    }
+  },
+  {
+    "model": "satosa_rpmgr.relyingparty",
+    "pk": 3,
+    "fields": {
+      "owner_cn": "Pfl\u00e4ging",
+      "owner_name": "Pfl\u00e4ging.net",
+      "entityID": "https://idp.pflaeging.net/auth/realms/pflaeging.net",
+      "zone_p": false,
+      "zone_q": false,
+      "zone_t": false,
+      "zone_d": true,
+      "entity_fqdn": "idp.pflaeging.net",
+      "admin_note": "",
+      "status": false,
+      "created_at": "2019-03-11T16:49:54.693Z",
+      "updated_at": "2019-06-04T20:37:34.366Z",
+      "attributes": [
+        3,
+        4,
+        5,
+        10,
+        15
+      ]
+    }
+  },
+  {
+    "model": "satosa_rpmgr.relyingparty",
+    "pk": 4,
+    "fields": {
+      "owner_cn": "Vemap",
+      "owner_name": "Vemap",
+      "entityID": "https://shibboleth.vemap.com",
+      "zone_p": false,
+      "zone_q": false,
+      "zone_t": false,
+      "zone_d": false,
+      "entity_fqdn": "shibboleth.vemap.com",
+      "admin_note": "",
+      "status": false,
+      "created_at": "2019-03-11T16:50:54.084Z",
+      "updated_at": "2019-03-11T16:50:54.084Z",
+      "attributes": []
+    }
+  },
+  {
+    "model": "satosa_rpmgr.relyingparty",
+    "pk": 5,
+    "fields": {
+      "owner_cn": "IDN",
+      "owner_name": "Identinetics",
+      "entityID": "https://sp1.test.wpv.portalverbund.at/sp.xml",
+      "zone_p": false,
+      "zone_q": false,
+      "zone_t": true,
+      "zone_d": false,
+      "entity_fqdn": "sp1.test.wpv.portalverbund.at",
+      "admin_note": "",
+      "status": true,
+      "created_at": "2019-03-11T16:52:13.761Z",
+      "updated_at": "2019-06-04T20:37:49.938Z",
+      "attributes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    }
+  },
+  {
+    "model": "satosa_rpmgr.relyingparty",
+    "pk": 6,
+    "fields": {
+      "owner_cn": "IDN",
+      "owner_name": "Identinetics",
+      "entityID": "https://sp2.test.wpv.portalverbund.at/sp.xml",
+      "zone_p": false,
+      "zone_q": false,
+      "zone_t": true,
+      "zone_d": false,
+      "entity_fqdn": "sp2.test.wpv.portalverbund.at",
+      "admin_note": "",
+      "status": true,
+      "created_at": "2019-03-11T16:52:21.837Z",
+      "updated_at": "2019-03-11T16:58:07.088Z",
+      "attributes": []
+    }
+  },
+  {
+    "model": "satosa_rpmgr.relyingparty",
+    "pk": 7,
+    "fields": {
+      "owner_cn": "IDN",
+      "owner_name": "Identinetics",
+      "entityID": "https://sp3.test.wpv.portalverbund.at/sp.xml",
+      "zone_p": false,
+      "zone_q": false,
+      "zone_t": true,
+      "zone_d": false,
+      "entity_fqdn": "sp3.test.wpv.portalverbund.at",
+      "admin_note": "",
+      "status": true,
+      "created_at": "2019-03-11T16:52:27.145Z",
+      "updated_at": "2019-03-11T16:58:01.490Z",
+      "attributes": []
+    }
+  },
+  {
+    "model": "satosa_rpmgr.relyingparty",
+    "pk": 8,
+    "fields": {
+      "owner_cn": "IDN",
+      "owner_name": "Identinetics",
+      "entityID": "https://sp4.test.wpv.portalverbund.at/sp.xml",
+      "zone_p": false,
+      "zone_q": false,
+      "zone_t": true,
+      "zone_d": false,
+      "entity_fqdn": "sp4.test.wpv.portalverbund.at",
+      "admin_note": "",
+      "status": true,
+      "created_at": "2019-03-11T16:52:31.330Z",
+      "updated_at": "2019-03-11T16:57:55.455Z",
+      "attributes": []
+    }
+  },
+  {
+    "model": "satosa_rpmgr.relyingparty",
+    "pk": 9,
+    "fields": {
+      "owner_cn": "ASI",
+      "owner_name": "Austrian Standards Institute",
+      "entityID": "https://useradmin-staging.austrian-standards.at/saml/metadata/alias/austrian-standards-staging-wpv",
+      "zone_p": false,
+      "zone_q": false,
+      "zone_t": true,
+      "zone_d": false,
+      "entity_fqdn": "useradmin-staging.austrian-standards.at",
+      "admin_note": "",
+      "status": false,
+      "created_at": "2019-03-11T16:53:34.237Z",
+      "updated_at": "2019-03-11T16:59:27.503Z",
+      "attributes": []
+    }
+  },
+  {
+    "model": "satosa_rpmgr.relyingparty",
+    "pk": 10,
+    "fields": {
+      "owner_cn": "Vemap",
+      "owner_name": "Vemap",
+      "entityID": "https://staging.vemap.com/sp",
+      "zone_p": false,
+      "zone_q": false,
+      "zone_t": true,
+      "zone_d": false,
+      "entity_fqdn": "staging.vemap.com",
+      "admin_note": "",
+      "status": true,
+      "created_at": "2019-03-11T16:54:20.605Z",
+      "updated_at": "2019-03-11T16:59:13.441Z",
+      "attributes": []
+    }
+  },
+  {
+    "model": "satosa_rpmgr.relyingparty",
+    "pk": 11,
+    "fields": {
+      "owner_cn": "Compass",
+      "owner_name": "Compass-Verlag",
+      "entityID": "https://wpv-qs.compass.at/sp.xml",
+      "zone_p": false,
+      "zone_q": true,
+      "zone_t": false,
+      "zone_d": false,
+      "entity_fqdn": "wpv-qs.compass.at",
+      "admin_note": "",
+      "status": true,
+      "created_at": "2019-03-11T16:54:59.436Z",
+      "updated_at": "2019-06-04T20:38:11.576Z",
+      "attributes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    }
+  },
+  {
+    "model": "satosa_rpmgr.relyingparty",
+    "pk": 12,
+    "fields": {
+      "owner_cn": "Compass",
+      "owner_name": "Compass-Verlag",
+      "entityID": "https://wpv-dev.compass.at/sp.xml",
+      "zone_p": false,
+      "zone_q": false,
+      "zone_t": true,
+      "zone_d": false,
+      "entity_fqdn": "wpv-dev.compass.at",
+      "admin_note": "",
+      "status": true,
+      "created_at": "2019-03-11T16:56:51.802Z",
+      "updated_at": "2019-06-04T20:38:17.353Z",
+      "attributes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    }
+  },
+  {
+    "model": "satosa_rpmgr.relyingparty",
+    "pk": 13,
+    "fields": {
+      "owner_cn": "Compass",
+      "owner_name": "Compass Verlag",
+      "entityID": "https://wpv.compass.at/sp.xml",
+      "zone_p": true,
+      "zone_q": false,
+      "zone_t": false,
+      "zone_d": false,
+      "entity_fqdn": "wpv.compass.at",
+      "admin_note": "",
+      "status": true,
+      "created_at": "2019-03-11T17:01:20.198Z",
+      "updated_at": "2019-06-04T20:38:03.983Z",
+      "attributes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    }
+  }
+]

@@ -2,6 +2,19 @@ import json
 from urllib.parse import urlparse
 from django.db import models
 
+class Attribute(models.Model):
+    uri_name = models.CharField(
+        unique=True,
+        blank=False, null=False,
+        max_length=60)
+    friendly_name = models.CharField(
+        blank=True, null=True,
+        max_length=60)
+
+    def __str__(self):
+        return self.friendly_name
+
+
 
 class RelyingParty(models.Model):
     class Meta:
@@ -40,6 +53,7 @@ class RelyingParty(models.Model):
         blank=True, null=True,
         verbose_name='Entity FQDN',
         max_length=115)
+    attributes = models.ManyToManyField(Attribute)
     admin_note = models.TextField(
         blank=True, null=True,
         verbose_name='Admin Notiz',

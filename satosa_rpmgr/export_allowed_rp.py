@@ -1,5 +1,6 @@
-from pathlib import Path
+import argparse
 import yaml
+from pathlib import Path
 
 import django
 django.setup()
@@ -16,7 +17,7 @@ def export_allowed_rp(idp_entityid: str):
 
 
 def allowed_requesters_path() -> Path:
-    return Path(settings.BASE_DIR, 'export', 'allowed_requesters.yaml')
+    return Path(settings.BASE_DIR, 'export', 'custom_routing_DecideIfRequesterIsAllowed.yaml')
 
 
 def allowed_requesters_config(idp_entityid: str, sp_entityids: list) -> dict:
@@ -32,3 +33,15 @@ def allowed_requesters_config(idp_entityid: str, sp_entityids: list) -> dict:
                 }
             }
         }
+
+
+def main():
+    parser = argparse.ArgumentParser(description='Export allowed RP (basedir/export/custom_routing_DecideIfRequesterIsAllowed.yaml')
+    parser.add_argument('--entityid', type=str, help='Backend IDP entityID')
+    args = parser.parse_args()
+    yaml_str = export_allowed_rp(args.entityid)
+    allowed_requesters_path().write_text(yaml_str)
+
+
+if __name__ == '__main__':
+    main()

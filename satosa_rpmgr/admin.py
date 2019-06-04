@@ -1,6 +1,12 @@
 from django.contrib import admin
-from .models import RelyingParty
+from .models import Attribute, RelyingParty
 
+
+@admin.register(Attribute)
+class AttributeAdmin(admin.ModelAdmin):
+    save_on_top = True
+    save_as = True
+    list_display = ('friendly_name', 'uri_name', )
 
 @admin.register(RelyingParty)
 class RelyingPartyAdmin(admin.ModelAdmin):
@@ -37,6 +43,7 @@ class RelyingPartyAdmin(admin.ModelAdmin):
         ('Entity Deployment', {
             'fields': (
                 'entityID',
+                'attributes',
                 'entity_fqdn',
                 'zone_p',
                 'zone_q',
@@ -55,6 +62,7 @@ class RelyingPartyAdmin(admin.ModelAdmin):
             )
         }),
     )
+    filter_horizontal = ('attributes',)
 
     def _get_zones(self, obj) -> str:
         zones = {

@@ -1,0 +1,12 @@
+config:
+  rules:
+    https://idp1.test.wpv.portalverbund.at/idp/shibboleth:
+      allow:
+      - - https://sp1.test.wpv.portalverbund.at/sp.xml
+        - https://sp2.test.wpv.portalverbund.at/sp.xml
+        - https://sp3.test.wpv.portalverbund.at/sp.xml
+        - https://sp4.test.wpv.portalverbund.at/sp.xml
+      deny:
+      - '*'
+module: satosa.micro_services.custom_routing.DecideIfRequesterIsAllowed
+name: RequesterDecider
