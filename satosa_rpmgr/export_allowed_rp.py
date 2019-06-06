@@ -27,7 +27,7 @@ def allowed_requesters_config(idp_entityid: str, sp_entityids: list) -> dict:
             'config': {
                 'rules': {
                     idp_entityid: {
-                        'allow': [sp_entityids],
+                        'allow': sp_entityids,
                         'deny': ['*']
                     }
                 }
