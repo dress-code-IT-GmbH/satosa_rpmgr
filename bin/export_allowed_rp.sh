@@ -1,5 +1,7 @@
 #!/bin/bash
 
+scriptsdir=$(cd "$(dirname ${BASH_SOURCE[0]})" && pwd)
+source $scriptsdir/setenv.sh
 
 [[ "$APPHOME" ]] || ( echo 'APPHOME not set'; exit 1)
 [[ "$DJANGO_SETTINGS_MODULE" ]] || (echo 'DJANGO_SETTINGS_MODULE not set'; exit 1)
