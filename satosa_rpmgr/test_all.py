@@ -2,7 +2,7 @@ from pathlib import Path
 import pytest
 import django
 from satosa_rpmgr.export_allowed_attr import export_allowed_attr
-from satosa_rpmgr.export_allowed_rp import export_allowed_rp
+from satosa_rpmgr.export_allowed_rp import _export_allowed_rp
 from satosa_rpmgr.models import RelyingParty
 
 django.setup()
@@ -31,7 +31,7 @@ def test_export_allowed_attr(django_db_setup):
 
 @pytest.mark.django_db
 def test_export_allowed_rp(django_db_setup):
-    yaml_str = export_allowed_rp('https://idp1.test.wpv.portalverbund.at/idp/shibboleth')
+    yaml_str = _export_allowed_rp('https://idp1.test.wpv.portalverbund.at/idp/shibboleth')
     expected_result_path = Path('testresults/allowed_requesters.yaml')
     assert yaml_str == expected_result_path.read_text()
 
